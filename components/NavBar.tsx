@@ -25,9 +25,6 @@ const NavBar = () => {
               />
               <img src="/img/logo-realms.svg" className="w-8 h-8 sm:w-24" />
             </picture>
-            <div style={{marginLeft: '1rem'}}>
-              for b00bs
-            </div>
           </div>
         </Link>
         <div className="flex items-center justify-end space-x-2 md:space-x-4">

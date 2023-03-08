@@ -104,7 +104,7 @@ async function getNFTCollectionInfo(
     },
   })
   console.log(collectionResult)
-  const mintToCheck = collectionResult.data?.nfts[0]?.mintAddress
+  const mintToCheck = collectionResult.data?.data?.nfts[0]?.mintAddress
   if (!mintToCheck) {
     throw new Error(
       'Address did not return collection with children whose "collection.key" matched'

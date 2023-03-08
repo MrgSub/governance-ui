@@ -103,7 +103,6 @@ async function getNFTCollectionInfo(
       collection: new PublicKey(collectionKey),
     },
   })
-  console.log(collectionResult)
   const mintToCheck = collectionResult.data?.data?.nfts[0]?.mintAddress
   if (!mintToCheck) {
     throw new Error(
@@ -337,7 +336,6 @@ export default function AddNFTCollectionForm({
         setSelectedNFTCollection(collectionInfo)
         setRequestPending(false)
       } catch (err) {
-        console.log(err)
         setRequestPending(false)
         setValue('collectionKey', collectionInput)
         setUnverifiedCollection(true)

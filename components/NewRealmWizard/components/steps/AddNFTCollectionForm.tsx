@@ -336,6 +336,7 @@ export default function AddNFTCollectionForm({
         setSelectedNFTCollection(collectionInfo)
         setRequestPending(false)
       } catch (err) {
+        console.log(err)
         setRequestPending(false)
         setValue('collectionKey', collectionInput)
         setUnverifiedCollection(true)

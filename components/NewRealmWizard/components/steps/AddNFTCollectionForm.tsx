@@ -103,6 +103,7 @@ async function getNFTCollectionInfo(
       collection: new PublicKey(collectionKey),
     },
   })
+  console.log(collectionResult)
   const mintToCheck = collectionResult.data?.nfts[0]?.mintAddress
   if (!mintToCheck) {
     throw new Error(
